@@ -1,0 +1,6 @@
+#!/bin/bash
+# use the bash shell
+set -x
+# echo each command to standard out before running it
+./hello
+# run the code
