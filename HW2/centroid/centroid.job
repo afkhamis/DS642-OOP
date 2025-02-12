@@ -1,0 +1,7 @@
+#!/bin/bash
+# use the bash shell
+module load intel
+set -x
+# echo each command to standard out before running it
+./centroid
+# run the code
