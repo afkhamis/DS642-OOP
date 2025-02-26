@@ -100,7 +100,15 @@ You can produce timing plots by running:
 
 which uses `gnuplot`, assuming that all the relevant CSV files are already in place.
 
+### HW submission
+The assignment is graded by reviewing your report, the optimization methods used, 
+and benchmarking your code's performance. To benchmark your code, it will be compiled 
+with the process detailed above, with the GNU compiler. A code that does not return 
+correct results will receive significant penalties. Submit your code and report through course canvas. 
 
+Your grade will depend on these factors: whether or not it completes running without exiting early, 
+performance shown on the Brideges-2 supercomputer, your observation of the performance features 
+you attempted. 
 
 
 
