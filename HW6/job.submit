@@ -1,0 +1,26 @@
+#!/bin/bash
+#SBATCH -N 1
+#SBATCH -p GPU-shared
+#SBATCH -t 00:01:00
+#SBATCH --gpus=v100-32:1
+
+#type 'man sbatch' for more information and options
+#this job will ask for 1 V100 GPUs on a v100-32 node in GPU-shared for 1 minute
+#this job would potentially charge 0.02 GPU SUs
+
+#echo commands to stdout
+set -x
+
+# move to working directory
+# this job assumes:
+# - all input data is stored in this directory
+# - all output should be stored in this directory
+# - please note that groupname should be replaced by your groupname
+# - username should be replaced by your username
+# - path-to-directory should be replaced by the path to your directory where the executable is
+
+cd /ocean/projects/groupname/username/path-to-directory
+
+#run pre-compiled program which is already in your project space
+
+./hello
