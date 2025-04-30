@@ -21,7 +21,7 @@ Instructions:
         
     4.  Optimize the PCG framework: Is there any opportunity to reuse intermediate values or reorder operations to make the solver faster? Do the methods you used affect the residual error, and why?
         
-    5.  Scaling: Evaluate strong and weak scaling of your distributed PCG solver by conducting tests with varying numbers of ranks to understand the performance characteristics of your implementation. Evaluate speedups across 1-64 ranks for one node and across different NxN matrices (N=2^20 - 2^26).
+    5.  Scaling: Evaluate strong and weak scaling of your distributed PCG solver by conducting tests with varying numbers of ranks to understand the performance characteristics of your implementation. Evaluate speedups across 1-64 ranks for one node and across different $N \times N$ matrices (N=2^20 - 2^26).
         
         *   Plot the relationship between the number of PCG iterations and the number of ranks used, for a few N. Explain the behavior based on your understanding of the algorithm and the code.
             
