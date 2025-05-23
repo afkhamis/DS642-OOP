@@ -20,6 +20,9 @@ The folder includes:
     The memory benchmark program: membench.c
     A gnuplot script: membench.gp 
 
-To complile and build the executable, type `make`. To submit to the compute node, type `make run_node`. To create the graph, type `make membench.pdf`. See the Makefile for further information. Submit your report through the course canvas.
+To complile and build the executable, type `make`. To submit to the compute node, type `make run_node`. To create the graph, type `make membench.pdf`. See the Makefile for further information. 
+
+### HW submission
+Submit, through the course canvas, your `membench.out` and `membench.pdf`.
     
   
