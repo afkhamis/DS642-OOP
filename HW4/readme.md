@@ -23,7 +23,7 @@ For performance assessment, there will be two types of scaling that are tested f
   *  In weak scaling we increase the problem size proportionally to the number of processors so the work/processor stays the same
 
 ### HW submission
-Submit a report for the followings:
+Submit a report, through `Canvas`, for the followings:
 
 1- A description of your OpenMP implementation/s and how your serial and parallel codes scale with the number of rectangles.
 
