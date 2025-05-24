@@ -11,7 +11,7 @@ Consider the Monte Carlo method of approximating $\pi$. The method is based on r
 A serial code that uses the Monte Carlo method for computing $\pi$ is provided `pi_mc.c`. Write a parallel version of this program with OpenMP.
 
 ### HW submission
-Submit a report for the followings:
+Submit a report, through `Canvas`, for the followings:
 
 1- A description of your OpenMP implementation/s and how your serial and parallel codes scale with the number of points.
 
