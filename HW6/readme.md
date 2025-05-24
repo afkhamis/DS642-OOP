@@ -1,6 +1,6 @@
 # Homework 6
 
-In these exercises, we will write simple cuda programs. You will learn how to allocate/free GPU memory (devise), move/copy data between/from the CPU (host) and the GPU, and launch kernels. Pay close attention to the kernel call parameters, block and grid sizes! Can you write the kernel so that it functions even if you launch too many threads
+In these exercises, we will write simple cuda programs. You will learn how to allocate/free GPU memory (devise), move/copy data between/from the CPU (host) and the GPU, and launch kernels. Pay close attention to the kernel call parameters, block and grid sizes! Can you write the kernel so that it functions even if you launch too many threads?
 
 ## **1. Hello World**
 
@@ -32,7 +32,7 @@ To run your code on Bridges2, use `hello.submit` script:
 $ sbatch hello.submit 
 ```
 
-You can also in an interactive session, see https://www.psc.edu/resources/bridges-2/user-guide/ for further information.
+You can also run in an interactive session, see https://www.psc.edu/resources/bridges-2/user-guide/ for further information.
 
 ## **2. Computing $\pi$**
 
