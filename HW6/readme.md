@@ -60,5 +60,11 @@ To reserve a GPU in an interactive session, see the Bridges-2 manual: https://ww
 Please also note jobs in the GPU-shared partition use only part of one node. Because SUs are calculated using how many gpus are used, using only part of a node will result in a smaller SU charge. Use your discretion when running on GPU nodes to minimize the SU charge, due to limited availability. 
 
 
+### HW submission
+Submit, through the course canvas, your `hello.cu`, `pi.cu` and `vector_add.cu`.
+    
+  
+
+
 
 
