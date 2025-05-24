@@ -20,4 +20,13 @@ For performance assessment, there will be two types of scaling that are tested f
 
   *  In strong scaling we keep the problem size constant but increase the number of processors
 
-  *  In weak scaling we increase the problem size proportionally to the number of processors so the work/processor stays the same 
+  *  In weak scaling we increase the problem size proportionally to the number of processors so the work/processor stays the same
+
+### HW submission
+Submit a report for the followings:
+
+1- A description of your OpenMP implementation/s and how your serial and parallel codes scale with the number of rectangles.
+
+2- Speedup plot/s and a discussion on whether or not your OpenMP code approach the ideal speedup.
+
+
