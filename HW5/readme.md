@@ -12,10 +12,10 @@ Run the program again, however this time sort the output to clearly see which th
 
 
   *  Can you optimize the program by playing with how the loops are scheduled?
-  *  Try – Cache blocking – Loop unrolling – Vectorization and see how they interact with the constructs in OpenMP
+  *  Try – Cache blocking – Loop unrolling – Vectorization and see how they interact with the constructs in OpenMP.
   *  Can you approach the peak performance of the computer?
 
 ### HW submission
-Submit, through the course canvas, your `membench.out` and `membench.pdf`.
+Submit your report through the course canvas.
     
   
