@@ -12,10 +12,14 @@ In this project, you will develop a distributed version of the preconditioned co
 Instructions:
 
 *   The goal of this assignment is to use preconditioned conjugate gradients (PCG) to solve $Ax = b$ (obtained from the finite difference discretization of the 1D Poisson's equation), where $A$ is $N \times N$, which has 2s on its diagonal and -1s on its off-diagonals (above and below the diagonal). The vector b is all 1s, and the PCG method starts with an initial guess $x$ of all 0s. The starter code only works for 1 rank, and it is not efficient. In this project, you will use MPI to develop a distributed version of this PCG solver. For simplicity, we set N to be a multiple of the number of ranks used. You must do the following:
+
+### Milestone 1   
     
     1.  Sparse Matrix Format Conversion: Translate the provided starter-code–map-based sparse matrix representation—to a more efficient format (i.e. [CSR (Compressed Sparse Row) or CSC (Compressed Sparse Column)](https://en.wikipedia.org/wiki/Sparse_matrix))
         
     2.  Layout Formulation: Figure out how to distribute the sparse matrix format across MPI processes.
+
+### Milestone 2
         
     3.  Parallelize matrix-vector multiplication and norm across different MPI ranks.
         
