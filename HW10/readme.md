@@ -2,6 +2,10 @@
 
 In this exercise, you will implement a parallel matrix-vector multiplication. Serial version of the code is provided, `mat_vect_mul.c`, using one-dimensional arrays to store the vectors and the matrix.  In your implementation, the vector should use block distribution and the matrix is distributed by block rows. You should generate a random matrix $A$ and a random vector $x$. Measure the elapsed time for execution of the multiplication and investigate the performance of your parallel implementation. Note also that the number of processes should evenly divide both $m$ and $n$.
 
+### HW submission
+Submit, through course Canvas, your code and a report that include how the runtime of your serial and parallel codes scale with the size of the matrix and speedup plots od your parallel code.   
+
+
 
 # Parallelized HEAT-1D Example
 This exercise is based on an explicit numerical solution of one-dimensional heat equation domain decomposition. Initial temperature is zero everywhere and two boundary conditions are provided as the input. During the time-stepping, an array containing two domains is used; these domains alternate between old data and new data.
@@ -17,6 +21,8 @@ where variables are colored and ghost cells or boundary data are white cells. Pr
 * P1 sends entry 3 of its local vector to P2 and receives entry 4;
 * P2 sends entry 1 of its local vector to P1 and receives entry 0;
 
-Your assignment is to implement blocking, nonblocking, and combined `Send` and `Receive` and then study the strong and weak scaling of the code with these three different methods of communication. For each case, plot the raw time measurement for $N=6400$, and $P=1, 2, 4, 8, 16, 32, 64$. Then plot strong efficiency for $N=6400$ and weak efficiency for $N = 100, 200, 400, 800, 1600, 3200, 6400$ for $P=1, 2, 4, 8, 16, 32, 64$. You must also make sure that the time step size used for weak scaling is kept constant for all the cases so that the same number of iterations are used for the computations. Based on your observtion, which of the communication modes performs better?  
+
+### HW submission
+Your assignment is to implement blocking, nonblocking, and combined `Send` and `Receive` and then study the strong and weak scaling of the code with these three different methods of communication. For each case, plot the raw time measurement for $N=6400$, and $P=1, 2, 4, 8, 16, 32, 64$. Then plot strong efficiency for $N=6400$ and weak efficiency for $N = 100, 200, 400, 800, 1600, 3200, 6400$ for $P=1, 2, 4, 8, 16, 32, 64$. You must also make sure that the time step size used for weak scaling is kept constant for all the cases so that the same number of iterations are used for the computations. Based on your observation, which of the communication modes performs better? Submit, through course Canvas, your code and a report.
 
 
