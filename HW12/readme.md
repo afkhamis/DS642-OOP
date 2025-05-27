@@ -35,3 +35,6 @@ $ mpicc -o fft_example1D_mpi fft_example1D_mpi.c -lfftw3_mpi -lfftw3 -lm
 `
 $ nvcc -o fft_example1D_cuda fft_example1D.cu -lcufft -lm
 `
+
+### HW Submission
+Submit, through course Canvas, your codes. 
