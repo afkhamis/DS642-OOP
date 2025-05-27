@@ -30,3 +30,7 @@ In order to measure the compute time, use `MPI_Wtime`, and insert it before and 
 
 3- A code, using messages and point-to-point communications, `MPI_Send()` and `MPI_Recv()`, is procvided for approximating $\pi$ using numerical integration `pi_mpi.c`. This implementation uses rank 0 processor for computing the final result, which becomes necessarily a communication bottleneck if the number of messages gets large. Your homework is to implement a more optimized method: a scatter-gather that can distribute terms in the sum to multiple processors and then collect the result using `MPI_reduce()`, and then compare the execution speeds.
 
+
+### HW submission
+Submit, through course Canvas, your codes and output of your codes.  
+
