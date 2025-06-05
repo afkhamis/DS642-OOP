@@ -1,4 +1,4 @@
-# Review / Compile / Run OpenMP example code
+# Module 5: Assignment-OpenMP-Review/Compile/Run OpenMP example code
 
 Compute $\pi$ by numerical integration, using Riemann sums. We know
 
