@@ -1,4 +1,4 @@
-# Data distributions with MPI 
+# Module 10: Assignment-Data Distributions with MPI
 
 1- In this exercise, we want to write a vector addition program in MPI. The work consists of adding the individual components of the vectors, so there is no communication between the tasks. You can assume that the number of components evenly divides between the number of processors. To begin with, you can simply assign blocks of the vector consecutive components to each process; after that, each process simply adds its assigned components. The serial version of the code is given `vector_add.c`
 
