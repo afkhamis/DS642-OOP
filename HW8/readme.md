@@ -1,4 +1,4 @@
-# OpenCL Vector Addition
+# Module 9: Assignment-Open CL Model
 This exercise shows a minimal conversion from our CUDA vector addition code to an OpenCL version. Inspect and verify that you can run an OpenCL kernel. Look at the host code and identify the API calls in the host code. After compiling and running, a message verifying that the program completed successfully is printed out. 
 
 **Compiling**:
