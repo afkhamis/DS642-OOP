@@ -1,3 +1,5 @@
+# Module 12: Assignment-MPI Libraries
+
 LAPACK library, which is built upon BLAS library, provides linear solvers, among many other linear algebra computations. It is optimized to run on a single process but not for cross cpu systems. The "example_lapack.c" illustrates an example of solving a single linear system of equations. Note that the matrix in this example is stored in column-major order.  
 
 In this assignment, you will use the ScaLAPCK package for the parallel implementation of the LAPACK library. You must use distributed memory equivalent to the serial routines in "example_lapack.c" to solve the linear system of equations. 
