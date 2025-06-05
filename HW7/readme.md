@@ -1,3 +1,5 @@
+# Module 8: Assignment-GPU Memory
+
 ## **1. 2D Matrix Multiply Using Shared Memory**
 This example introduces two-dimensional threadblock/grid shape. Study the code, `matrix_mul.cu` and see how the 2D indexing is implemented. This naive version has too many global memory access. Now implement a shared memory version (loading tiles of A, B into shared memory in parallel) to the 2D matrix multiply given above to improve performance. Study the runtime of both codes and see whether you notice an improvement when using shared memory. 
 
