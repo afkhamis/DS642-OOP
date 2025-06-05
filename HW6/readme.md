@@ -1,4 +1,4 @@
-# Homework 6
+# Module 7: Assignment-Cuda Programming
 
 In these exercises, we will write simple cuda programs. You will learn how to allocate/free GPU memory (devise), move/copy data between/from the CPU (host) and the GPU, and launch kernels. Pay close attention to the kernel call parameters, block and grid sizes! Can you write the kernel so that it functions even if you launch too many threads?
 
