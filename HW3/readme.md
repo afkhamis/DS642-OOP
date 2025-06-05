@@ -1,4 +1,4 @@
-# Homework assignments 3
+# Module 5: Assignment-Monte Carlo Method
 
 Consider the Monte Carlo method of approximating $\pi$. The method is based on randomly picking points on the circle/square - see figure (from: https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tutorial):
 
