@@ -1,4 +1,4 @@
-# FFTW
+# Module 13: Assignment-Fast Fourier Transform and Parallel FFT
 
 The Fast Fourier Transform (FFT) has many applications, from filtering and image compression to solving partial differential equations. A basic approach for computing an FFT is to use the FFTW library. Here we provide an example `fft_example1D.c` that demonstrates the forward and inverse Fourier transform. 
 
