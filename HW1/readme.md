@@ -1,4 +1,4 @@
-# HW1: 
+# Module 1: Assignment-Matrix Multiply 
 ---
 This assignment is about logging into Bridges-2 machine, compiling the matrix multiplication code, and running the code on the compute node by submitting a job to the cluster queue.
 
