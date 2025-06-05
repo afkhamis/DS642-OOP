@@ -1,4 +1,4 @@
-# Matrix multiplication with OpenMP
+# Module 6: Assignment-Matrix Multiplication with Open MP
 
 OpenMP parallelization of matrix multiplication program `omp_matmul.c`.
 
