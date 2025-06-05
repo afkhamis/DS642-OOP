@@ -1,4 +1,4 @@
-# Parallelized Matrix Vector Multiplication
+# Module 11: Assignment-MPI Part II
 
 In this exercise, you will implement a parallel matrix-vector multiplication. Serial version of the code is provided, `mat_vect_mul.c`, using one-dimensional arrays to store the vectors and the matrix.  In your implementation, the vector should use block distribution and the matrix is distributed by block rows. You should generate a random matrix $A$ and a random vector $x$. Measure the elapsed time for execution of the multiplication and investigate the performance of your parallel implementation. Note also that the number of processes should evenly divide both $m$ and $n$.
 
