@@ -1,4 +1,4 @@
-# Module 2: Assignment-Performance/Optimization and Memory Hierarchy    
+# Module 4: Assignment-Performance/Optimization and Memory Hierarchy    
 
 In this homework, we will cover 3 problems: 
 
