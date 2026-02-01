@@ -8,7 +8,7 @@ To compile and run, type:
 Submit a report for the followings:
 
 1- Review the code and explain how each method is computing the
-centriod. 
+centroid. 
 
 2- Run and measure the time and determine which method 
 is faster, and explain why. 
