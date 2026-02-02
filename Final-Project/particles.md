@@ -148,9 +148,9 @@ Both executables have the same command line interface. Without losing generality
 
 `./serial`
 
-`
+
 Simulation Time = 1.17782 seconds for 1000 particles.
-`
+
 
 You can also run the program using the job scripts. 
 
@@ -160,9 +160,9 @@ By default, the program runs with 1000 particles. The number of particles can be
 ./serial -n 10000
 `
 
-`
+
 Simulation Time = 115.992 seconds for 10000 particles.
-`
+
 
 If we rerun the program, the initial positions and velocities of the particles will be randomized because the particle seed is unspecified. By default, the particle seed will be unspecified; this can be changed with the "-s" command line parameter:
 
@@ -170,9 +170,9 @@ If we rerun the program, the initial positions and velocities of the particles w
 ./serial -s 150
 `
 
-`
+
 Simulation Time = 1.18632 seconds for 1000 particles.
-`
+
 
 This will set the particle seed to 150 which initializes the particles in a reproducible way. We will test the correctness of your code by randomly selecting several particle counts and seeds and ensuring the particle positions are correct when printed with the "-o" command line parameter. You can print the particle positions to a file specified with the "-o" parameter:
 
@@ -180,9 +180,9 @@ This will set the particle seed to 150 which initializes the particles in a repr
 ./serial -o serial.parts.out
 `
 
-`
+
 Simulation Time = 1.46991 seconds for 1000 particles.
-`
+
 
 This will create a serial.parts.out file with the particle positions after each step listed. You can use the rendering tool below to convert this into a .gif file of your particles. See the below section on Rendering Output for more information.
 
