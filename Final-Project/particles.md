@@ -53,7 +53,7 @@ The starter codes are available on Github
 3- CUDA: [https://github.com/Berkeley-CS267/hw2-3](https://github.com/Berkeley-CS267/hw2-3)
 
 
-and should work out of the box.  To get started, log in to Bridges-2 and clone the git repository, using, for example:
+and should work out of the box.  To get started, log in to Bridges-2 and clone the git repository, using, for example for **OpenMP**:
 
 `
 git clone https://github.com/Berkeley-CS267/hw2-1
@@ -103,7 +103,7 @@ First, we need to make sure that the CMake module is loaded.
 
 `module load cmake`
 
-You should put these commands in your `~/.bash\_profile` file to avoid typing them every time you log in.
+You should put these commands in your `~/.bash_profile` file to avoid typing them every time you log in.
 
 Next, let's build the code. CMake prefers out of tree builds, so we start by creating a build directory.
 
@@ -146,8 +146,9 @@ Running the Program
 
 Both executables have the same command line interface. Without losing generality, we discuss how to operate the serial program here. Run: 
 
-`./serial
+`./serial`
 
+`
 Simulation Time = 1.17782 seconds for 1000 particles.
 `
 
@@ -157,7 +158,9 @@ By default, the program runs with 1000 particles. The number of particles can be
 
 `
 ./serial -n 10000
+`
 
+`
 Simulation Time = 115.992 seconds for 10000 particles.
 `
 
@@ -165,7 +168,9 @@ If we rerun the program, the initial positions and velocities of the particles w
 
 `
 ./serial -s 150
+`
 
+`
 Simulation Time = 1.18632 seconds for 1000 particles.
 `
 
@@ -173,7 +178,9 @@ This will set the particle seed to 150 which initializes the particles in a repr
 
 `
 ./serial -o serial.parts.out
+`
 
+`
 Simulation Time = 1.46991 seconds for 1000 particles.
 `
 
@@ -181,7 +188,7 @@ This will create a serial.parts.out file with the particle positions after each 
 
 You can use the "-h" command line parameter to print the help menu summarizing the parameter options:
 
-`./serial -h
+`./serial -h`
 
 Options:
 
@@ -192,7 +199,7 @@ Options:
 \-o <filename>: set the output file name
 
 \-s <int>: set particle initialization seed
-`
+
 
 ### Important notes for Performance:
 
