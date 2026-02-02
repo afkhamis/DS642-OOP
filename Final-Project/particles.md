@@ -23,7 +23,13 @@ If we were to naively compute the forces on the particles by iterating through e
 
 ### Parallel Speedup
 
-Suppose we have a code that runs in time T = O(n) on a single processor. Then we'd hope to run close to time T/p when using p processors.  After implementing an efficient serial O(n) solution, you will attempt to reach this speedup using OpenMP.
+Suppose we have a code that runs in time T = O(n) on a single processor. Then we'd hope to run close to time T/p when using p processors.  After implementing an efficient serial O(n) solution, you will attempt to reach this speedup using:
+
+1- OpenMP
+
+2- MPI
+
+3- CUDA
 
 ----------------------------------------------------------------------------
 
@@ -37,12 +43,23 @@ Getting Set Up
 
 -------------------------------------------
 
-The starter code is available on Github at [https://github.com/Berkeley-CS267/hw2-1](https://github.com/Berkeley-CS267/hw2-1) and should work out of the box.  To get started, we recommend you log in to Bridges-2 and clone the git repository, using 
+The starter codes are available on Github
+
+
+1- OpenMP: [https://github.com/Berkeley-CS267/hw2-1](https://github.com/Berkeley-CS267/hw2-1) 
+
+2- MPI: [https://github.com/Berkeley-CS267/hw2-2](https://github.com/Berkeley-CS267/hw2-2)
+
+3- CUDA: [https://github.com/Berkeley-CS267/hw2-3](https://github.com/Berkeley-CS267/hw2-3)
+
+
+and should work out of the box.  To get started, log in to Bridges-2 and clone the git repository, using, for example:
+
 `
 git clone https://github.com/Berkeley-CS267/hw2-1
 `
 
-There are seven files in the base repository. Their purposes are as follows:
+There are seven files in this base repository. Their purposes are as follows:
 
 `CMakeLists.txt`
 
@@ -72,6 +89,7 @@ A simple O(n^2) particle simulation algorithm. It is your job to write an O(n) s
 
 A skeleton file where you will implement your openmp simulation algorithm. It is your job to write a parallel algorithm within the simulate\_one\_step function.
 
+Similar instructions apply to MPI and CUDA parts. 
 
 =========================================
 
@@ -293,4 +311,8 @@ If the program prints an error, then your output is incorrect. Here serial.parts
 
 =========================================
 
+
+## Part I: Parallel programming using a shared memory model.
+## Part II: Parallel programming using a distributed memory model.
+## Part III: 
 
