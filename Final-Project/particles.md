@@ -207,22 +207,11 @@ There will be two types of scaling that are tested for your parallel codes:
 
 *   In strong scaling we keep the problem size constant but increase the number of processors
     
-*   In weak scaling we increase the problem size proportionally to the number of processors so the work/processor stays the same (Note that for the purposes of this assignment we will assume a linear scaling between work and processors)
-    
+*   In weak scaling we increase the problem size proportionally to the number of processors so the work/processor stays the same 
 
 While the scripts we are providing have small numbers of particles 1000 to allow for the O(n2) algorithm to finish execution, the final codes should be tested with values much larger (500000-1000000) to better see their performance.
 
 =========================================
-
-
-Grading
-
-
-------------------------------------
-
-We will grade your assignment by reviewing your assignment write-up, measuring the scaling of both the openmp and serial implementations, and benchmarking your code's raw performance. To benchmark your code, we will compile it with the exact process detailed above, with the GNU compiler. 
-
-There are usually some groups every year who come up with faster methods to compute the particle repulsion force function (i.e. rearranging the arithmetic, changing the formula, or using some fancy instructions). This is great, but small differences in the floating point position values begin to add up until the simulation output diverges from our ground truth (even though your method of computation might be more accurate than ours). Since (a) the point of the assignment is to explore OpenMP parallelism, and (b) we can't anticipate every possible way to compute this force function, here is the rule: if it doesn't pass the correctness check we provide you reliably, then it's not allowed. 
 
 ### Submission Details
 
@@ -234,43 +223,25 @@ Create an appropriate submission archive:
     
 `
 cmake -DGROUP\_NAME=04 ..
+`
 
+`
 make package
 `
 
 =========================================
 
-
-Write-up Details
-
-*   Your write-up should contain:
-    
-    *   The names of the people in your group and each member's contribution.
-        
+Your write-up must include the measure of the scaling of the OpenMP, MPI, CUDA, and serial implementations, and benchmarking your code's raw performance:
+            
     *   A plot in log-log scale that shows that your serial and parallel codes run in O(n) time and a description of the data structures that you used to achieve it.
         
-    *   A description of the synchronization you used in the shared memory implementation.
+    *   A description of the synchronization you used.
         
     *   A description of the design choices that you tried and how did they affect the performance.
         
-    *   Speedup plots that show how closely your OpenMP code approaches the idealized p-times speedup and a discussion on whether it is possible to do better.
+    *   Speedup plots that show how closely your OpenMP, MPI, and CUDA codes approach the idealized speedup and a discussion on whether it is possible to do better.
         
-    *   Where does the time go? Consider breaking down the runtime into computation time, synchronization time and/or communication time. How do they scale with p?
-        
-
-Notes:
-
-*   Your grade will mostly depend on three factors:
-    
-    *   Scaling sustained by your codes on the perlmutter supercomputer (varying n).
-        
-    *   Performance sustained by your codes on the perlmutter supercomputer.
-        
-    *   Explanations of your methodologies and the performance features you observed (including what didn't work).
-        
-*   You must use the GNU C Compiler for this assignment. If your code does not compile and run with GCC, it will not be graded.
-    
-*   If your code produces incorrect results, it will not be graded.
+    *   Where does the time go? Consider breaking down the runtime into computation time, synchronization time and/or communication time. How do they scale?
   
     
 =========================================
@@ -283,9 +254,11 @@ Rendering Output
 
 The output files that are produced from running the program with the "-o" command line parameter can be fed into the rendering tool made available to convert them into .gif files. These animations will be a useful tool in debugging. To get started clone the rendering repo and load the python module:
 
-'
-git clone [https://github.com/Berkeley-CS267/hw2-rendering](https://github.com/Berkeley-CS267/hw2-rendering)
+`
+git clone https://github.com/Berkeley-CS267/hw2-rendering
+`
 
+`
 module load python
 `
 
@@ -305,8 +278,9 @@ Output Correctness
 
 The output files that are produced from running the program with the "-o" command line parameter can be fed into the correctness tool made available to perform a correctness check. This is the same correctness check we will be performing when grading this, however, we will randomly select the particle seeds. To get started clone the correctness repo and load the python module:
 
-`git clone [https://github.com/Berkeley-CS267/hw2-correctness](https://github.com/Berkeley-CS267/hw2-correctness)`
+`git clone https://github.com/Berkeley-CS267/hw2-correctness`
 
+`
 module load python
 `
 
@@ -321,5 +295,5 @@ If the program prints an error, then your output is incorrect. Here serial.parts
 
 ## Part I: Parallel programming using a shared memory model.
 ## Part II: Parallel programming using a distributed memory model.
-## Part III: 
+## Part III: Parallel programming using GPUs.
 
