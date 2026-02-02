@@ -63,11 +63,11 @@ There are seven files in this base repository. Their purposes are as follows:
 
 `CMakeLists.txt`
 
-The build system that manages compiling your code.
+The build system that manages compiling the code.
 
 `main.cpp`
 
-A driver program that runs your code. 
+A driver program that runs the code. 
 
 `common.h`
 
@@ -94,7 +94,7 @@ Similar instructions apply to MPI and CUDA parts.
 =========================================
 
 
-Building our Code
+Building the Code
 
 
 ----------------------------------------------
